@@ -8,6 +8,21 @@ function arabicToRoman(arabicNumber) {
     case arabicNumber === 0 : {
       return ''
     }
+    case arabicNumber >= 1000 : {
+      return romanEnum.thousand + arabicToRoman(arabicNumber - 1000)
+    }
+    case arabicNumber >= 900 : {
+      return romanEnum.nineHundred + arabicToRoman(arabicNumber - 900)
+    }
+    case arabicNumber >= 500 : {
+      return romanEnum.fiveHundred + arabicToRoman(arabicNumber - 500)
+    }
+    case arabicNumber >= 400 : {
+      return romanEnum.fourHundred + arabicToRoman(arabicNumber - 400)
+    }
+    case arabicNumber >= 100 : {
+      return romanEnum.hundred + arabicToRoman(arabicNumber - 100)
+    }
     case arabicNumber >= 90 : {
       return romanEnum.ninety + arabicToRoman(arabicNumber - 90)
     }

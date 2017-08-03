@@ -7,5 +7,10 @@ module.exports = {
   ten: 'X',
   forty: 'XL',
   fifty: 'L',
-  ninety: 'XC'
+  ninety: 'XC',
+  hundred: 'C',
+  fourHundred: 'CD',
+  fiveHundred: 'D',
+  nineHundred: 'CM',
+  thousand: 'M'
 }
